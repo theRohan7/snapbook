@@ -134,11 +134,14 @@ function SignupForm() {
             />
 
             <Button type="submit" className="shad-button_primary">
-            {isCreatingUser? (
-            <div className="flex-center gap-2">
-              <Loader />Loading....
-            </div>):"Sign-up"}
-            </Button>
+            {isCreatingUser || isSigningIn || isUserLoading ? (
+              <div className="flex-center gap-2">
+                <Loader /> Loading...
+              </div>
+            ) : (
+              "Sign Up"
+            )}
+          </Button>
 
             <p className="text-small-regular text-light-2 text-center">
               Already have an account ?

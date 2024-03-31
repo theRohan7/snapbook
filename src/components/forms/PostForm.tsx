@@ -12,7 +12,7 @@ import { Models } from "appwrite"
 import { useCreatePost, useUpdatePost } from "@/lib/react-query/queriesAndMutations"
 import { useUserContext } from "@/context/AuthContext"
 import { toast } from "../ui/use-toast"
-import { updatePost } from "@/lib/validation/appwrite/api"
+
 
   
 type PostFormprops ={
